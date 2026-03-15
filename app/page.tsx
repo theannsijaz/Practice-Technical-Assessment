@@ -57,24 +57,24 @@ export default function HomePage() {
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-16 px-4 py-12">
         <header className="relative flex flex-col items-center justify-center gap-6 text-center">
           <div className="rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-emerald-300">
-            AI Insight Generator
+            From wall of text to instant clarity
           </div>
           <h1 className="text-4xl font-black leading-tight tracking-tight sm:text-6xl md:text-7xl">
-            Design is Everything
+            Turn raw text into actionable insights
           </h1>
           <p className="max-w-2xl text-base text-white/70 sm:text-lg">
-            Unleashing clarity from your text with vivid summaries, sharp takeaways, and titles that stick.
+            Paste any notes, transcript, or draft—get a crisp summary, three key takeaways, and a title in seconds.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <LiquidButton className="text-white px-6 py-3" onClick={scrollToForm}>
-              Let&apos;s Go
+              Generate insights
             </LiquidButton>
             <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-emerald-300">
               <span className="relative flex h-3 w-3 items-center justify-center">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
               </span>
-              Available for new prompts
+              Ready to summarize now
             </div>
           </div>
         </header>
