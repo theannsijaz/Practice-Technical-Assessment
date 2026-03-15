@@ -27,11 +27,11 @@ export async function POST(req: Request) {
       preamble: SYSTEM_PROMPT,
       message: `Generate a JSON object with keys summary, insights (array of 3), and title for this text: ${cleaned}`,
       temperature: 0.4,
-      max_tokens: 320,
-      response_format: { type: "json_object" },
+      maxTokens: 320,
+      responseFormat: { type: "json_object" },
     });
 
-    const content = response.message?.content?.[0]?.text ?? response.text ?? "";
+    const content = response.text ?? "";
 
     let parsed: { summary?: string; insights?: string[]; title?: string };
     try {
